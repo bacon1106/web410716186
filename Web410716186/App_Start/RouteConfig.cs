@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Web410716186
+namespace WebApplication1
 {
     public class RouteConfig
     {
