@@ -1,4 +1,6 @@
 ﻿
+@model Web410716186.ViewModels.SignUpData
+
 @{
     ViewBag.Title = "Signup";
 }
@@ -7,10 +9,10 @@
 
 @using (Html.BeginForm("Signup", "User", FormMethod.Post))
 {
-<p>姓名:@Html.TextBox("name")@ViewBag.NameMessage</p>
-<p>帳號:@Html.TextBox("account")@ViewBag.accountMessage</p>
-<p>密碼:@Html.TextBox("password")@ViewBag.passwordMessage</p>
-<p>@ViewBag.Message</p>
+<p>姓名:@Html.TextBoxFor(m => m.Name) @Model.NameMessage</p>
+<p>帳號:@Html.TextBoxFor(m => m.Account) @Model.AccountMessage</p>
+<p>密碼:@Html.TextBoxFor(m => m.Password) @Model.PasswordMessage</p>
+<p>@Model.Message</p>
 <input type="submit" name="name" value="註冊" />
 
     }
