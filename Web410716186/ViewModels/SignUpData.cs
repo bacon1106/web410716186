@@ -27,11 +27,7 @@ namespace Web410716186.ViewModels
 
         public string Password{ get; set; }
 
-        public string NameMessage { get; set; }
-
-        public string AccountMessage { get; set; }
-
-        public string PasswordMessage { get; set; }
+       
 
         public string Message { get; set; }
 
